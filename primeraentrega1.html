@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MoodVibes - Tu estado de ánimo, tu música</title>
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- FontAwesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+  />
+
+  <!-- Fuente Inter -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Estilos propios -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="container">
+
+    <!-- Inicio -->
+    <section id="home-section">
+      <h1>MoodVibes</h1>
+      <p>Tu estado de ánimo, tu música.</p>
+      <button class="btn-primary">¿Cómo te sientes hoy?</button>
+    </section>
+
+    <hr>
+
+    <!-- Selector de estados de ánimo -->
+    <section id="mood-selector-section">
+      <h2>¿Cómo te sientes hoy?</h2>
+      <div class="emoji-grid">
+        <button class="emoji-button">😊</button>
+        <button class="emoji-button">😢</button>
+        <button class="emoji-button">😠</button>
+        <button class="emoji-button">😌</button>
+        <button class="emoji-button">⚡</button>
+        <button class="emoji-button">🤔</button>
+      </div>
+      <button class="btn-primary">Ver mi Vibe</button>
+    </section>
+
+    <hr>
+
+    <!-- Resultado -->
+    <section id="tu-vibe-section">
+      <h2>Tu Vibe para hoy</h2>
+      <div id="vibe-content">
+        <h3>😊 Estás feliz</h3>
+        <div class="block">
+          <p><b>🎵 Lista de reproducción:</b></p>
+          <ul>
+            <li>Happy - Pharrell Williams</li>
+            <li>Can't Stop the Feeling - Justin Timberlake</li>
+            <li>Good Vibes - Chris Janson</li>
+          </ul>
+        </div>
+        <div class="block">
+          <p><b>💬 Frase motivadora:</b></p>
+          <p>La alegría es contagiosa, ¡compártela!</p>
+        </div>
+        <div class="block">
+          <p><b>🎨 Actividad sugerida:</b></p>
+          <p>Sal a dar un paseo y sonríe a desconocidos.</p>
+        </div>
+      </div>
+      <button class="btn-primary">Cambiar mi Vibe</button>
+      <button class="btn-primary">Contacto</button>
+    </section>
+
+    <hr>
+
+    <!-- Contacto -->
+    <section id="contact-section">
+      <h2>Contacto</h2>
+      <form>
+        <input type="text" placeholder="Tu nombre (opcional)" class="input-field">
+        <textarea placeholder="Comparte tus ideas o pide ayuda..." class="input-field" required></textarea>
+        <button type="submit" class="btn-primary">Enviar mensaje</button>
+      </form>
+      <button class="btn-primary">Volver al inicio</button>
+    </section>
+
+  </div>
+</body>
+</html>
